@@ -4,14 +4,14 @@ import './Pokedex.css';
 
 const Pokedex = () => {
     const pokemons = [
-        { id: 38, name: 'Ninetales', type: 'Fire', base_experience: 177 },
-        { id: 39, name: 'Jigglypuff', type: 'Normal/Fairy', base_experience: 95 },
-        { id: 251, name: 'Celebi', type: 'Psychic/Grass', base_experience: 270 },
-        { id: 282, name: 'Gardevoir', type: 'Psychic/Fairy', base_experience: 259 },
-        { id: 300, name: 'Skitty', type: 'Normal', base_experience: 52 },
-        { id: 301, name: 'Delcatty', type: 'Normal', base_experience: 140 },
-        { id: 315, name: 'Roselia', type: 'Grass/Posion', base_experience: 140 },
-        { id: 334, name: 'Altaria', type: 'Dragon/Flying', base_experience: 172 },
+        { id: 38, name: 'Ninetales', type: 'Fire', baseExperience: 177 },
+        { id: 39, name: 'Jigglypuff', type: 'Normal/Fairy', baseExperience: 95 },
+        { id: 251, name: 'Celebi', type: 'Psychic/Grass', baseExperience: 270 },
+        { id: 282, name: 'Gardevoir', type: 'Psychic/Fairy', baseExperience: 259 },
+        { id: 300, name: 'Skitty', type: 'Normal', baseExperience: 52 },
+        { id: 301, name: 'Delcatty', type: 'Normal', baseExperience: 140 },
+        { id: 315, name: 'Roselia', type: 'Grass/Posion', baseExperience: 140 },
+        { id: 334, name: 'Altaria', type: 'Dragon/Flying', baseExperience: 172 },
     ];
 
     const shuffledPokemons = [...pokemons].sort(() => Math.random() - 0.5);
@@ -19,8 +19,8 @@ const Pokedex = () => {
     const hand1 = shuffledPokemons.slice(0, pokemons.length / 2);
     const hand2 = shuffledPokemons.slice(pokemons.length / 2);
 
-    const totalExperienceHand1 = hand1.reduce((total, pokemon) => total + pokemon.base_experience, 0);
-    const totalExperienceHand2 = hand2.reduce((total, pokemon) => total + pokemon.base_experience, 0);
+    const totalExperienceHand1 = hand1.reduce((total, pokemon) => total + pokemon.baseExperience, 0);
+    const totalExperienceHand2 = hand2.reduce((total, pokemon) => total + pokemon.baseExperience, 0);
 
     return (
         <div className="main">
