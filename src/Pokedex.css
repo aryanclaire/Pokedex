@@ -6,12 +6,15 @@ body {
     
 }
 .main {
+    /* background: rgb(255,0,0); */
+    /* background: linear-gradient(0deg, rgba(255,0,0,1) 23%, rgba(255,209,26,1) 100%); */
     display: flex;
     justify-content: space-around;
     width: 80%;
-    height: auto;
+    height: 100vh;
     margin: auto;
     box-shadow: 2px 2px 5px grey;
+    background-color: rgba(92, 138, 138, 0.4); 
 }
 
 .pokedex {
@@ -25,7 +28,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
 }
 
 .cards {
@@ -37,18 +39,26 @@ body {
 .card {
     margin: 5px;
     padding: 10px;
-    border: 1px solid #000;
     border-radius: 8px;
     width: 150px; 
     height: auto; 
-    background-color: #333;
+    background: rgb(255,209,26);
+    background: radial-gradient(circle, rgba(255,209,26,1) 0%, rgba(255,0,0,0.7400210084033614) 100%);
     color: white;
     font-size: 10px; 
     text-align: center; 
+    box-shadow: 2px 2px 5px grey;
 }
 
-h3, p {
+h1, p{
+    letter-spacing: 3;
+    color: white;
+}
+
+h3 {
+    letter-spacing: 3;
     margin-top: 0;
+    color: white;
 }
 
 
