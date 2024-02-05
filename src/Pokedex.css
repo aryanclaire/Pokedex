@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+
+body {
+    font-family: 'Sigmar One';
+    
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    width: 150px; 
+    height: auto; 
+    background-color: #333;
+    color: white;
+    font-size: 10px; 
+    text-align: center; 
+}
+
+h3, p {
+    margin-top: 0;
+}
+
+
+.Pokecard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
